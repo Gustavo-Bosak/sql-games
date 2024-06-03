@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*, a, ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(50, 50, 50);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, main {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background: #fffaf1;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+.logo {
+    height: 4rem;
+    cursor: pointer;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 4px 2px rgba(48, 50, 44, 0.2);
+    z-index: 1;
+}
+
+header nav {
+    height: 5rem;
+}
+
+nav, .titleTop, ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    & .breakBar {
+        background: #6FCE1D;
+        width: 40%;
+    }
+}
+
+& .titleTop p {
+    color: #6FCE1D;
+}
+
+.breakLine {
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url('../../images/break_inline.png') center/contain no-repeat;
+}
+
+ul {
+    width: fit-content;
+    gap: 1rem;
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.titleTop {
+    margin-top: 4vh;
+    & img {
+        height: 20rem;
+        margin: 3rem;
+    }
+    & h1 {
+        margin-right: 4rem;
+        font: 1000 4rem 'Bebas Neue';
+    }
+}
+
+.mainFrame {
+    width: 80%;
+    height: 80vh;
+    padding: 2rem;
+    margin-block: 6vh;
+    border: #b8b8b8 solid 2px;
+    box-shadow: 0px 0px 4px #b8b8b8,-1px 1px 0 #b8b8b8,-2px 2px 0 #b8b8b8,-3px 3px 0 #b8b8b8,-4px 4px 0 #b8b8b8,-5px 5px 0 #b8b8b8,-6px 6px 0 #b8b8b8,8px 8px 0 transparent;
+    & iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    flex-flow: column;
+    background: #cef69a url('../../images/footer_bg.png') center/40%;
+    padding: 6vh 0 10vh 0;
+}
+
+.breakBar {
+    width: 80%;
+    height: 2px;
+    background-color: #30322C;
+    border-radius: 1rem;
+    margin-block: 4vh;
+}
+
+.terms {
+    display: flex;
+    gap: 2rem;
+}
+
+.social img {
+    height: 1.5rem;
+    background: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Hover */
+
+header li:nth-child(odd):hover, footer li:hover, .terms p:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    text-decoration: underline #6FCE1D 2px;
+    text-underline-offset: 0.5rem;
+}
+
+footer li:hover, .terms p:hover {
+    text-decoration-color: #FFFFFF;
+}
